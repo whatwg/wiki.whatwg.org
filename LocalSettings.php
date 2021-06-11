@@ -238,7 +238,7 @@ wfLoadExtension('SyntaxHighlight_GeSHi');
 wfLoadExtensions([ 'ConfirmEdit', 'ConfirmEdit/ReCaptchaNoCaptcha' ]);
 $wgCaptchaClass = 'ReCaptchaNoCaptcha';
 # These keys are for the whatwg.org domain name.
-$wgReCaptchaSiteKey = getenv('RECAPTCHA_SITE_KEY');
+$wgReCaptchaSiteKey = '6LepFtgSAAAAAOplwDJE25CIFG7UGR5HIhyeWhos';
 $wgReCaptchaSecretKey = getenv('RECAPTCHA_SECRET_KEY');
 $wgReCaptchaSendRemoteIP = false;
 
