@@ -158,6 +158,7 @@ $wgGroupPermissions['user']['sendemail'] = false;
 
 $wgLocaltimezone = 'UTC';
 
+$wgMainPageIsDomainRoot = true;
 $wgArticlePath = '/wiki/$1';
 
 $wgFavicon = 'https://resources.whatwg.org/logo.svg';
