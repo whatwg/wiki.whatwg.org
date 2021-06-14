@@ -7,7 +7,7 @@ RUN set -eux; \
 	a2enmod headers; \
 	{ \
 		echo '<Directory /var/www/html>'; \
-		echo '  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"'; \
+		echo '  Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"'; \
 		echo '  Header always set X-Frame-Options "sameorigin"'; \
 		echo '  Header setifempty X-Content-Type-Options "nosniff"'; \
 		echo '</Directory>'; \
