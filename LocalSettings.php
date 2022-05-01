@@ -47,7 +47,7 @@ $wgEnableEmail = true;
 $wgEnableUserEmail = true; # UPO
 
 $wgEmergencyContact = 'gphemsley@gmail.com';
-$wgPasswordSender = 'admin@wiki.whatwg.org';
+$wgPasswordSender = 'admin@whatwg.org';
 
 $wgEnotifUserTalk = true; # UPO
 $wgEnotifWatchlist = true; # UPO

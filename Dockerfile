@@ -2,6 +2,10 @@ FROM mediawiki:1.37.2
 COPY LocalSettings.php /var/www/html/LocalSettings.php
 COPY entrypoint.sh /entrypoint.sh
 
+# Enable sending mail (see also some config in entrypoint.sh)
+RUN apt-get update && apt-get install -y ssmtp && apt-get clean && \
+    echo 'sendmail_path = "/usr/sbin/ssmtp -t -i"' > /usr/local/etc/php/conf.d/mail.ini
+
 # Enable security headers.
 RUN set -eux; \
 	a2enmod headers; \
