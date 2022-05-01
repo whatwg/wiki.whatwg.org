@@ -46,6 +46,15 @@ $wgLogo = 'https://resources.whatwg.org/logo.svg';
 $wgEnableEmail = true;
 $wgEnableUserEmail = true; # UPO
 
+$wgSMTP = [
+  'host' => 'tls://smtp.fastmail.com',
+  'IDHost' => 'whatwg.org',
+  'port' => 465,
+  'auth' => true,
+  'username' => getenv('FASTMAIL_USERNAME'),
+  'password' => getENV('FASTMAIL_PASSWORD')
+];
+
 $wgEmergencyContact = 'gphemsley@gmail.com';
 $wgPasswordSender = 'admin@whatwg.org';
 
