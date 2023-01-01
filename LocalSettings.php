@@ -139,6 +139,7 @@ wfLoadExtension( 'WikiEditor' );
 
 
 # Prevent anonymous users from editing pages.
+$wgGroupPermissions['*']['read'] = true;
 $wgGroupPermissions['*']['edit'] = false;
 $wgGroupPermissions['*']['createpage'] = false;
 $wgGroupPermissions['*']['createtalk'] = false;
