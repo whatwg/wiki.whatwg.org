@@ -1,4 +1,4 @@
-FROM mediawiki:1.39.3
+FROM mediawiki:1.40.0
 COPY LocalSettings.php /var/www/html/LocalSettings.php
 COPY entrypoint.sh /entrypoint.sh
 
